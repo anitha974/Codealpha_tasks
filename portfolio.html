@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anitha - Profile Card</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#8EC5FC,#E0C3FC);
+}
+
+.card{
+    width:340px;
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.profile{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#6C63FF;
+    color:#fff;
+    font-size:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 15px;
+}
+
+h1{
+    color:#333;
+    margin-bottom:5px;
+}
+
+.job{
+    color:#6C63FF;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+p{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.skills{
+    margin-bottom:20px;
+}
+
+.skills span{
+    display:inline-block;
+    background:#6C63FF;
+    color:#fff;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+button{
+    padding:12px 30px;
+    border:none;
+    background:#6C63FF;
+    color:white;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#4b43d1;
+    transform:scale(1.05);
+}
+
+.social{
+    margin-top:20px;
+}
+
+.social a{
+    text-decoration:none;
+    font-size:28px;
+    margin:0 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="profile">A</div>
+
+    <h1>Anitha</h1>
+
+    <div class="job">Aspiring Web Developer</div>
+
+    <p>
+        I love creating websites and learning new technologies.
+        I enjoy building clean, responsive and user-friendly web applications.
+    </p>
+
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+
+    <button onclick="contact()">Contact Me</button>
+
+    <div class="social">
+        <a href="#">🌐</a>
+        <a href="#">💼</a>
+        <a href="#">📷</a>
+    </div>
+
+</div>
+
+<script>
+function contact(){
+    alert("Thank you for visiting Anitha's Profile!");
+}
+</script>
+
+</body>
+</html>
